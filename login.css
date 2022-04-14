@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: #0d0d0d;
+}
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  background-image: url(/img/bg.jpg);
+  background-position: center;
+}
+
+a {
+  color: #999;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px;
+  transform: translateY(20px);
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+.logo {
+  height: 40px;
+  transform: translateX(105px) translateY(-105px);
+}
+.img {
+  height: 200px;
+}
+.h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 20px 0;
+  margin-left: 20%;
+  background: -webkit-linear-gradient(#28b485, #7ed56f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loginbox {
+  width: 500px;
+  height: 600px;
+  background: #000;
+  color: #44de26;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.login__form {
+  margin-left: 5%;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form__input {
+  font-size: 15px;
+  font-family: inherit;
+  color: inherit;
+  padding: 15px 20px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 95%;
+  display: block;
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid orangered;
+}
+.form__input:focus:invalid {
+  border-bottom: 3px solid #44de26;
+}
+.form__input::-webkit-input-placeholder {
+  color: #666;
+}
+.form__label {
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 7px;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-40px);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #44de26;
+  color: #eee;
+  padding: 15px 45px;
+  display: inline-block;
+  border-radius: 50px;
+  transition: all 0.2s;
+  margin-left: 25%;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  background-color: #44de26;
+}
+
+.btn--login:link,
+.btn--login:visited {
+  font-size: 16px;
+  color: #44de26;
+  display: inline-block;
+  text-decoration: none;
+  padding: 3px;
+  transition: all 0.2s;
+  margin-left: 15%;
+}
+
+.btn--login:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}

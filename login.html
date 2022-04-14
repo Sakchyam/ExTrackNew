@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<script>
+	function validate(){
+	const name = document.getElementByID('name')
+    const password = document.getElementByID('password')
+	if (name.value == '' || password.value == ''){
+		alert ("Username required")
+	} 
+	else{
+
+	}
+}
+</script>
+<body>
+
+        <div class="loginbox">
+            <div class="logo">
+                <img src="/img/logo1.png" alt="logo" class="img">
+            </div>
+        <div class="login__form">
+
+            <form id="form" action="" method="GET" class="form">
+            <h2 class="h2">Login here</h2>
+
+                <div class="form__group">
+                	
+                    <input type="text" class="form__input" placeholder="Username" id="name" required>
+                    <label for="name" class="form__label">Username</label>
+                </div>
+
+                <div class="form__group">
+                    <input type="password" class="form__input" placeholder="Password" id="Password" required>
+                    <label for="password" class="form__label">Password</label>
+                </div>
+
+                <div class="form__group">
+                    <button class="btn btn--login">Login &rarr;</button>
+                </div>
+                <div class="a">
+                    <a href="forgetpword.html"> Lost your password? </a><br>
+                    <a href="signup.html"> Don't have an account?</a>
+                </div>
+         
+               
+            </form>
+        </div>
+        </div>
+</body>
+</html>
